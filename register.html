@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>register</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+ 
+        <div class="main">
+                <div class="wrapper">
+                    <div class="logo">
+            
+            <h2>Register Here</h2>
+                    </div>
+                    <form class="form" id="eform" action="register.html">
+                        <h3>you will receive an unique participant Id</h3>
+                        <p>
+                                <input type="text" placeholder="your name" id="name" required>
+                        </p>
+                        <p>
+                                <input type="text" placeholder="phone number" id="phonenumber" required>
+                        </p>
+                       
+                        <p>
+                                <select name="" id="eventSelector">
+                                        <option value="one">event1</option>
+                                        <option value="two">event2</option>
+                                        <option value="three">event3</option>
+                                        <option value="four">event4</option>
+                                        <option value="five">event5</option>
+                                    </select>
+                        </p>
+                       
+                            <button type="submit" id="submit">register</button>
+                    </form>
+                    <p>*Successfully registered!!<br>if you didn't receive a message try registering again</p>
+        
+                </div>
+            </div>
+    
+    
+     <script src="vendor/jquery/jquery.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
+    <script src="js/register.js"></script>
+</body>
+</html>
