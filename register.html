@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>register</title>
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="img/icons/pukaar.ico" />
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Pacifico" rel="stylesheet">      
 </head>
 <body>
  
@@ -13,37 +16,35 @@
                 <div class="wrapper">
                     <div class="logo">
             
-            <h2>Register Here</h2>
+            <h2>Pukaar 2k18</h2>
                     </div>
-                    <form class="form" id="eform" action="register.html">
-                        <h3>you will receive an unique participant Id</h3>
+                    <form class="form" id="eform" action="register.html" method="POST">
+                        <h3>Event Registration</h3>
                         <p>
-                                <input type="text" placeholder="your name" id="name" required>
+                                <input type="text" placeholder="Your Name" id="name" required/>
                         </p>
                         <p>
-                                <input type="text" placeholder="phone number" id="phonenumber" required>
+                                <input type="text" placeholder="Phone Number" id="phonenumber" required />
                         </p>
+                        <p>
+                          <input type="text" placeholder="Branch" id="branch" required />
+                         </p>
+                         <p>
+                           <input type="text" placeholder="College Name" id="college" required />
+                         </p>
+
                        
-                        <p>
-                                <select name="" id="eventSelector">
-                                        <option value="one">event1</option>
-                                        <option value="two">event2</option>
-                                        <option value="three">event3</option>
-                                        <option value="four">event4</option>
-                                        <option value="five">event5</option>
-                                    </select>
-                        </p>
-                       
-                            <button type="submit" id="submit">register</button>
+                            <button type="submit" id="submit">Register</button>
                     </form>
-                    <p>*Successfully registered!!<br>if you didn't receive a message try registering again</p>
+                    <br>
+                    <div class="alert alert-success" role="alert">Registered Successfully!!<br> do more</div>
+                       
         
                 </div>
             </div>
     
     
      <script src="vendor/jquery/jquery.min.js"></script>
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
     <script src="js/register.js"></script>
 </body>

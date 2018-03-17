@@ -5,15 +5,17 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Be there on 17th March">
+    <meta name="author" content="we care the green moment">
+  
 
     <title>Pukaar</title>
 
-    <!-- Bootstrap core CSS -->
+    
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom fonts for this template -->
+     <link rel="stylesheet" href="css/preloader.css">
+    <link rel="stylesheet" href="css/aos.css">
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
@@ -21,17 +23,22 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC|Coiny|Cookie|Dosis|Fredoka+One|Great+Vibes|Julius+Sans+One|Mina|Monoton|Poiret+One|Rammetto+One" rel="stylesheet"> 
 
-    <!-- Custom styles for this template -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.min.css">
+  
     <link href="css/agency.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="img/icons/pukaar.ico" />
 
   </head>
 
-  <body id="page-top">
+  <body id="page-top" data-spy="scroll">
+    <div class="container-fluid">
+      <div id="preloader">
+          <div id="load"></div>
+        </div>
 
-    <!-- Navigation -->
+        <button onclick="topFunction()" id="myBtn" title="Go to top">&uparrow;</button>
+
+
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div class="container">
         <a class="navbar-brand js-scroll-trigger" href="#page-top">pukaar</a>
@@ -45,16 +52,16 @@
               <a class="nav-link js-scroll-trigger" href="#services">goals</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#portfolio">attractions</a>
+              <a class="nav-link js-scroll-trigger" href="#portfolio">Attractions</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">About</a>
+              <a class="nav-link js-scroll-trigger" href="#about">Events</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#team">Team</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Register</a>
+              <a class="nav-link js-scroll-trigger" href="register.html">Register</a>
             </li>
           </ul>
         </div>
@@ -65,38 +72,38 @@
     <header class="masthead">
       <div class="container">
         <div class="intro-text">
-          <div class="intro-lead-in">Pukaar</div>
-          <div class="intro-heading text-uppercase">Echoes of the Earth</div>
-          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="register.html">Register</a>
+          <div class="intro-lead-in" ><p data-aos="fade-down" data-aos-duration="2000"  >Pukaar</p></div>
+          <div class="intro-heading text-uppercase" data-aos="zoom-out" data-aos-delay="3000" data-aos-duration="2000" >Echoes of the Earth</div>
+          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="register.html" data-aos="zoom-in"  data-aos-duration="1000">Register</a>
         </div>
       </div>
     </header>
 
-    <!-- Services -->
+    <!-- Our Goals -->
     <section id="services">
       <div class="container">
         <div class="row">
-          <div class="col-lg-12 text-center">
+          <div class="col-lg-12 text-center" data-aos="zoom-out"  data-aos-duration="1000">
             <h2 class="section-heading text-uppercase">our goals</h2>
   
           </div>
         </div>
         <div class="row text-center">
-          <div class="col-md-4">
+          <div class="col-md-4" data-aos="fade-up-right"  data-aos-duration="1000">
             <span class="fa-stack fa-4x">
                <img src="img/icons/eco.png" alt="" class="img-responsive bal">
             </span>
             <h4 class="service-heading">Balance</h4>
             <p class="text-muted">To maintain balance between technology and environment..</p>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4" data-aos="fade-up"  data-aos-duration="1000">
             <span class="fa-stack fa-4x">
               <img src="img/icons/trash.png" alt="" class="img-responsive bal">
             </span>
             <h4 class="service-heading">cleanliness</h4>
             <p class="text-muted">To keep our nit clean and green and encourage others to do the same</p>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4" data-aos="fade-up-left"  data-aos-duration="1000">
             <span class="fa-stack fa-4x">
               <img src="img/icons/drop.png" alt="" class="img-responsive bal">
             </span>
@@ -116,88 +123,130 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-md-4 col-sm-6 portfolio-item">
+          <div class="col-md-4 col-sm-6 portfolio-item" data-aos="flip-up"  data-aos-duration="1000">
             <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
               <div class="portfolio-hover">
                 <div class="portfolio-hover-content">
                   <i class="fa fa-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="img/portfolio/01-thumbnail.jpg" alt="">
+              <img class="img-fluid" src="img/events/doodleshow.jpg" alt="">
             </a>
             <div class="portfolio-caption">
-              <h4>Threads</h4>
-              <p class="text-muted">Illustration</p>
+              <h4>Doodle Show</h4>
+              <p class="text-muted"></p>
             </div>
           </div>
-          <div class="col-md-4 col-sm-6 portfolio-item">
+          <div class="col-md-4 col-sm-6 portfolio-item" data-aos="flip-down"  data-aos-duration="1000">
             <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
               <div class="portfolio-hover">
                 <div class="portfolio-hover-content">
                   <i class="fa fa-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="img/portfolio/02-thumbnail.jpg" alt="">
+              <img class="img-fluid" src="img/events/greplanner.jpg" alt="">
             </a>
             <div class="portfolio-caption">
-              <h4>Explore</h4>
-              <p class="text-muted">Graphic Design</p>
+              <h4>Greplanner</h4>
+              <p class="text-muted"></p>
             </div>
           </div>
-          <div class="col-md-4 col-sm-6 portfolio-item">
+          <div class="col-md-4 col-sm-6 portfolio-item" data-aos="flip-up"  data-aos-duration="1000">
             <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
               <div class="portfolio-hover">
                 <div class="portfolio-hover-content">
                   <i class="fa fa-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="img/portfolio/03-thumbnail.jpg" alt="">
+              <img class="img-fluid" src="img/events/slowcycle.jpg" alt="">
             </a>
             <div class="portfolio-caption">
-              <h4>Finish</h4>
-              <p class="text-muted">Identity</p>
+              <h4>Slow Cycle</h4>
+              <p class="text-muted"></p>
             </div>
           </div>
-          <div class="col-md-4 col-sm-6 portfolio-item">
+          <div class="col-md-4 col-sm-6 portfolio-item" data-aos="flip-down"  data-aos-duration="1000">
             <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
               <div class="portfolio-hover">
                 <div class="portfolio-hover-content">
                   <i class="fa fa-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="img/portfolio/04-thumbnail.jpg" alt="">
+              <img class="img-fluid" src="img/events/signaturefornature.jpg" alt="">
             </a>
             <div class="portfolio-caption">
-              <h4>Lines</h4>
-              <p class="text-muted">Branding</p>
+              <h4>Signature for Nature</h4>
+              <p class="text-muted"></p>
             </div>
           </div>
-          <div class="col-md-4 col-sm-6 portfolio-item">
+          <div class="col-md-4 col-sm-6 portfolio-item" data-aos="flip-up"  data-aos-duration="1000">
             <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
               <div class="portfolio-hover">
                 <div class="portfolio-hover-content">
                   <i class="fa fa-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="img/portfolio/05-thumbnail.jpg" alt="">
+              <img class="img-fluid" src="img/events/kavyaanjali.jpg" alt="">
             </a>
             <div class="portfolio-caption">
-              <h4>Southwest</h4>
-              <p class="text-muted">Website Design</p>
+              <h4>Kavyaanjali</h4>
+              <p class="text-muted"></p>
             </div>
           </div>
-          <div class="col-md-4 col-sm-6 portfolio-item">
+          <div class="col-md-4 col-sm-6 portfolio-item" data-aos="flip-down"  data-aos-duration="1000">
             <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
               <div class="portfolio-hover">
                 <div class="portfolio-hover-content">
                   <i class="fa fa-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="img/portfolio/06-thumbnail.jpg" alt="">
+              <img class="img-fluid" src="img/events/n visage.jpg" alt="">
             </a>
             <div class="portfolio-caption">
-              <h4>Window</h4>
-              <p class="text-muted">Photography</p>
+              <h4>N-Visage</h4>
+              <p class="text-muted"></p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item" data-aos="flip-up"  data-aos-duration="1000">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal7">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fa fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/events/ebullience.jpg" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4>Ebullience</h4>
+              <p class="text-muted"></p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item" data-aos="flip-down"  data-aos-duration="1000">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal8">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fa fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/events/capture the moment.jpg" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4>Capture the Moment</h4>
+              <p class="text-muted"></p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item" data-aos="flip-up"  data-aos-duration="1000">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal9">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fa fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/events/selfie with nature.jpg" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4>Selfie With Nature</h4>
+              <p class="text-muted"></p>
             </div>
           </div>
         </div>
@@ -206,211 +255,254 @@
 
     <!-- About -->
     <section id="about">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Dayline</h2>
-            <h3 class="section-subheading text-muted">17th March</h3>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 text-center" data-aos="zoom-in"  data-aos-duration="1000">
+              <h2 class="section-heading text-uppercase">Events</h2>
+              <h3 class="section-subheading text-muted">Fun and Amazing</h3>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12">
+              <ul class="timeline">
+                <li>
+                  <div class="timeline-image" data-aos="zoom-in"  data-aos-duration="1000">
+                    <img class="rounded-circle img-fluid" src="img/events/rush hour.jpg" alt="">
+                  </div>
+                  <div class="timeline-panel" data-aos="flip-up"  data-aos-duration="1000">
+                    <div class="timeline-heading" >
+                      <h4></h4>
+                      <h4 class="subheading">RUSH HOUR</h4>
+                    </div>
+                    <div class="timeline-body">
+                      <p class="text-muted">Come on engineers! Time to do something venturesome. Pukaar brings you with a pertinacious ever green fun event Rush Hour. You may be Mr. perfect in doing the tasks but here the winning factor is time. The team completing fastest wins the game. Exciting prizes awaits you.
+                        So all you need to do is make it work, make it right, make it fast.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li class="timeline-inverted">
+                  <div class="timeline-image" data-aos="zoom-in"  data-aos-duration="1000">
+                    <img class="rounded-circle img-fluid" src="img/events/bebhukkad.jpg" alt="">
+                  </div>
+                  <div class="timeline-panel" data-aos="flip-up"  data-aos-duration="1000">
+                    <div class="timeline-heading">
+                      <h4></h4>
+                      <h4 class="subheading">BE BHUKKAD</h4>
+                    </div>
+                    <div class="timeline-body">
+                      <p class="text-muted">All one needs to live is good food and money. WHAT IF YOU GET BOTH FOR FREE!!
+                        Yes, Pukaar presents you the most mouth-watering and funny event. The only required thing to participate is registration token and a hungry stomach. So don't miss the chance and be ready to get stuffed.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="timeline-image" data-aos="zoom-in"  data-aos-duration="1000">
+                    <img class="rounded-circle img-fluid" src="img/events/chitrankan.jpg" alt="">
+                  </div>
+                  <div class="timeline-panel" data-aos="flip-up"  data-aos-duration="1000">
+                    <div class="timeline-heading">
+                      <h4></h4>
+                      <h4 class="subheading">CHITRANKAN</h4>
+                    </div>
+                    <div class="timeline-body">
+                      <p class="text-muted">Creativity is God’s wonderful gift. Our hands are the powerful weapons to turn our imagination to true visuals in form of various artworks. Pukaar gives such an opportunity through “I am Michelangelo” to showcase the talent hidden in your magical hands. So, get ready for the first ever NO BRUSH PAINTING COMPETITION in the college</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="timeline-inverted">
+                  <div class="timeline-image" data-aos="zoom-in"  data-aos-duration="1000">
+                    <img class="rounded-circle img-fluid" src="img/events/abhvayakti.jpg" alt="">
+                  </div>
+                  <div class="timeline-panel" data-aos="flip-up"  data-aos-duration="1000">
+                    <div class="timeline-heading">
+                      <h4></h4>
+                      <h4 class="subheading">ABHVAYAKTI</h4>
+                    </div>
+                    <div class="timeline-body">
+                      <p class="text-muted">If you want to speak in crowd, but afraid of speaking in front of judges or want to speak in your own regional language. Then, here is a chance for you to tell poetry, do story-telling or stand-up comedy in a language you choose. So, come up for the event open mic in Pukaar.</p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="timeline-image" data-aos="zoom-in"  data-aos-duration="1000">
+                    <img class="rounded-circle img-fluid" src="img/events/amulya.jpg" alt="">
+                  </div>
+                  <div class="timeline-panel" data-aos="flip-up"  data-aos-duration="1000">
+                    <div class="timeline-heading">
+                      <h4></h4>
+                      <h4 class="subheading">AMULYA</h4>
+                    </div>
+                    <div class="timeline-body">
+                      <p class="text-muted">Calmness in body and peacefulness in mind can’t be achieved from wealth but by glancing the serene beauty of nature. There are plants, which have medicinal properties, which are unknown to many of us. All those flora surrounding us along with their medicinal importance are displayed in Exhibition. Pukaar brings you close to nature by exhibiting the creative work done by the participants in different competitions of the fest like Best out of waste, Doodle show etc. So come and visit the Green Exhibition which embellishes you with beauty of nature.</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="timeline-inverted">
+                  <div class="timeline-image" data-aos="zoom-in"  data-aos-duration="1000">
+                    <img class="rounded-circle img-fluid" src="img/events/stick tower.jpg" alt="">
+                  </div>
+                  <div class="timeline-panel" data-aos="flip-up"  data-aos-duration="1000">
+                    <div class="timeline-heading">
+                      <h4></h4>
+                      <h4 class="subheading">STICK TOWER</h4>
+                    </div>
+                    <div class="timeline-body">
+                      <p class="text-muted">Every structure is made twice; once inside the mind & one outside the mind. And we are Engineers, whatever we can imagine we can make it real.
+                        Pukaar is here with it's fun event, in which you will have to erect a tower using your imagination. The only winning criteria is tallest standing tower.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li class="timeline-inverted" >
+                  <div class="timeline-image" data-aos="zoom-in"  data-aos-duration="1000">
+                    <h4>Be Part
+                      <br>Of Our
+                      <br>Story!</h4>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-lg-12">
-            <ul class="timeline">
-              <li>
-                <div class="timeline-image">
-                  <img class="rounded-circle img-fluid" src="img/about/1.jpg" alt="">
-                </div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h4>2009-2011</h4>
-                    <h4 class="subheading">Our Humble Beginnings</h4>
-                  </div>
-                  <div class="timeline-body">
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                  </div>
-                </div>
-              </li>
-              <li class="timeline-inverted">
-                <div class="timeline-image">
-                  <img class="rounded-circle img-fluid" src="img/about/2.jpg" alt="">
-                </div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h4>March 2011</h4>
-                    <h4 class="subheading">An Agency is Born</h4>
-                  </div>
-                  <div class="timeline-body">
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="timeline-image">
-                  <img class="rounded-circle img-fluid" src="img/about/3.jpg" alt="">
-                </div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h4>December 2012</h4>
-                    <h4 class="subheading">Transition to Full Service</h4>
-                  </div>
-                  <div class="timeline-body">
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                  </div>
-                </div>
-              </li>
-              <li class="timeline-inverted">
-                <div class="timeline-image">
-                  <img class="rounded-circle img-fluid" src="img/about/4.jpg" alt="">
-                </div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h4>July 2014</h4>
-                    <h4 class="subheading">Phase Two Expansion</h4>
-                  </div>
-                  <div class="timeline-body">
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                  </div>
-                </div>
-              </li>
-              <li class="timeline-inverted">
-                <div class="timeline-image">
-                  <h4>Be Part
-                    <br>Of Our
-                    <br>Story!</h4>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
+      </section>
 
     <!-- Team -->
     <section class="bg-light" id="team">
       <div class="container">
         <div class="row">
-          <div class="col-lg-12 text-center">
+          <div class="col-lg-12 text-center" data-aos="zoom-in"  data-aos-duration="1000">
             <h2 class="section-heading text-uppercase">Our Amazing Team</h2>
-            <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
           </div>
         </div>
         <div class="row">
-          <div class="col-sm-4">
-            <div class="team-member">
-              <img class="mx-auto rounded-circle" src="img/team/1.jpg" alt="">
-              <h4>Kay Garland</h4>
-              <p class="text-muted">Lead Designer</p>
-              <ul class="list-inline social-buttons">
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fa fa-twitter"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fa fa-facebook"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fa fa-linkedin"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="team-member">
-              <img class="mx-auto rounded-circle" src="img/team/2.jpg" alt="">
-              <h4>Larry Parker</h4>
-              <p class="text-muted">Lead Marketer</p>
-              <ul class="list-inline social-buttons">
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fa fa-twitter"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fa fa-facebook"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fa fa-linkedin"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="team-member">
-              <img class="mx-auto rounded-circle" src="img/team/3.jpg" alt="">
-              <h4>Diana Pertersen</h4>
-              <p class="text-muted">Lead Developer</p>
-              <ul class="list-inline social-buttons">
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fa fa-twitter"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fa fa-facebook"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fa fa-linkedin"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-8 mx-auto text-center">
-            <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
-          </div>
-        </div>
+            <div class="col-sm-4">
+                <div class="team-member" data-aos="zoom-in"  data-aos-duration="1000">
+                  <img class="mx-auto rounded-circle" src="img/team/satyam.jpg" alt="">
+                  <h4>Satyam Gupta</h4>
+                  <p class="text-muted">Head Co-ordinator<br>Event Manager</p>                 
+                </div>
+              </div>
+              <div class="col-sm-4">
+                  <div class="team-member" data-aos="zoom-in"  data-aos-duration="1000">
+                    <img class="mx-auto rounded-circle" src="img/team/rahul.jpg" alt="">
+                    <h4>Rahul More</h4>
+                    <p class="text-muted">Head Co-ordinator<br>Sponsorship & Marketing</p>                   
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member" data-aos="zoom-in"  data-aos-duration="1000">
+                      <img class="mx-auto rounded-circle" src="img/team/rupsha.jpg" alt="">
+                      <h4>Rushpa Mukherjee</h4>
+                      <p class="text-muted">Head Co-ordinator<br>Sponsorship & Marketing</p>
+                    </div>
+                </div>
+                <div class="col-sm-4 hide">
+                    <div class="team-member" data-aos="zoom-in"  data-aos-duration="1000">
+                      <img class="mx-auto rounded-circle" src="img/team/ashish.jpg" alt="">
+                      <h4>Ashish Chandrakar</h4>
+                      <p class="text-muted">Core Member<br>Event Management</p>                     
+                    </div>
+                </div>
+                <div class="col-sm-4 hide">
+                    <div class="team-member" data-aos="zoom-in"  data-aos-duration="1000">
+                      <img class="mx-auto rounded-circle" src="img/team/davinder.jpg" alt="">
+                      <h4>Davinder Singh</h4>
+                      <p class="text-muted">Core Member<br>Mobile App Developer</p>
+                    </div>
+                </div>
+                <div class="col-sm-4 hide">
+                    <div class="team-member" data-aos="zoom-in"  data-aos-duration="1000">
+                      <img class="mx-auto rounded-circle" src="img/team/varul.jpg" alt="">
+                      <h4>Varull Mishra</h4>
+                      <p class="text-muted">Core Member<br>Web Develper</p>
+                    </div>
+                </div>
+                <div class="col-sm-4 hide">
+                    <div class="team-member" data-aos="zoom-in"  data-aos-duration="1000">
+                      <img class="mx-auto rounded-circle" src="img/team/rekha.jpg" alt="">
+                      <h4>Rekha Sagaturu</h4>
+                      <p class="text-muted">Core Member<br>Event Management</p>
+                    </div>
+                </div>
+                <div class="col-sm-4 hide">
+                    <div class="team-member" data-aos="zoom-in"  data-aos-duration="1000">
+                      <img class="mx-auto rounded-circle" src="img/team/gunjan.jpg" alt="">
+                      <h4>Gunjan Sharma</h4>
+                      <p class="text-muted">Core Member<br>Event Management</p>
+                    </div>
+                </div>
+                <div class="col-sm-4 hide">
+                    <div class="team-member" data-aos="zoom-in"  data-aos-duration="1000">
+                      <img class="mx-auto rounded-circle" src="img/team/saqalin.jpg" alt="">
+                      <h4>Saqlain Shaik</h4>
+                      <p class="text-muted">Core Member<br>Sponsorship & Marketing</p>
+                    </div>
+                </div>
+                <div class="col-sm-4 hide">
+                    <div class="team-member" data-aos="zoom-in"  data-aos-duration="1000">
+                      <img class="mx-auto rounded-circle" src="img/team/krishna.jpg" alt="">
+                      <h4>Krishna Sahu</h4>
+                      <p class="text-muted">Core Member<br>Design & Graphics</p>
+                    </div>
+                </div>
+                <div class="col-sm-4 hide">
+                    <div class="team-member" data-aos="zoom-in"  data-aos-duration="1000">
+                      <img class="mx-auto rounded-circle" src="img/team/lsagar.jpg" alt="">
+                      <h4>L. Sagar</h4>
+                      <p class="text-muted">Core Member<br>Sponsorship & Marketing</p>
+                    </div>
+                </div>
+                <div class="col-sm-4 hide" data-aos="zoom-in"  data-aos-duration="1000">
+                    <div class="team-member">
+                      <img class="mx-auto rounded-circle" src="img/team/gayatri.jpg" alt="">
+                      <h4>Gayathri Kottem</h4>
+                      <p class="text-muted">Core Member<br>Public Relations</p>
+                    </div>
+                </div>
+                <div class="more" data-aos="zoom-in"  data-aos-duration="1000">
+                  <button class="btn btn-primary" onclick="showMore()">more</button>
+                </div>
       </div>
     </section>
 
     <!-- Clients -->
-    <section class="py-5">
+    <section class="py-5" id="spons">
       <div class="container">
         <div class="row">
-          <div class="col-md-3 col-sm-6">
+          <div class="col-md-3 col-sm-6" data-aos="fade-in"  data-aos-duration="1000">
             <a href="#">
-              <img class="img-fluid d-block mx-auto" src="img/logos/envato.jpg" alt="">
+              <img class="img-fluid d-block mx-auto" src="img/spons/engineer.jpg" alt="">
             </a>
           </div>
-          <div class="col-md-3 col-sm-6">
+          <div class="col-md-3 col-sm-6" data-aos="fade-in"  data-aos-duration="1000">
             <a href="#">
-              <img class="img-fluid d-block mx-auto" src="img/logos/designmodo.jpg" alt="">
+              <img class="img-fluid d-block mx-auto" src="img/spons/cspcdl.jpg" alt="">
             </a>
           </div>
-          <div class="col-md-3 col-sm-6">
+          <div class="col-md-3 col-sm-6" data-aos="fade-in"  data-aos-duration="1000">
             <a href="#">
-              <img class="img-fluid d-block mx-auto" src="img/logos/themeforest.jpg" alt="">
+              <img class="img-fluid d-block mx-auto" src="img/spons/cecb.jpg" alt="">
             </a>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <a href="#">
-              <img class="img-fluid d-block mx-auto" src="img/logos/creative-market.jpg" alt="">
-            </a>
+          <div class="col-md-3 col-sm-6" data-aos="fade-in"  data-aos-duration="1000">
+              <a href="#">
+                <img class="img-fluid d-block mx-auto" src="img/spons/print.jpg" alt="">
+              </a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Contact -->
+    <!-- Contact 
+
     <section id="contact">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Contact Us</h2>
-            <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+            <h2 class="section-heading text-uppercase">Get In Touch With Us</h2>
+            <h3 class="section-subheading text-muted">Send us your message.</h3>
           </div>
         </div>
         <div class="row">
@@ -448,75 +540,363 @@
         </div>
       </div>
     </section>
+    -->
 
     <!-- Footer -->
     <footer>
-      <div class="container">
+      <div class="container" id="foot" style="background = #2dcf8a;">
         <div class="row">
           <div class="col-md-4">
-            <span class="copyright">Copyright &copy; Your Website 2018</span>
+            <span class="copyright">Copyright &copy; GOGREENNITRR</span>
+            <br>
+            <span><strong>email:</strong>gogreennitrr@gmail.com</span><br>
+            <br>
+            <span><strong>contact:</strong>+91 7772028420</span>
+            
+
           </div>
           <div class="col-md-4">
             <ul class="list-inline social-buttons">
-              <li class="list-inline-item">
-                <a href="#">
+              <li class="list-inline-item" data-aos="zoom-in"  data-aos-duration="1000">
+                <a href="https://twitter.com/Go_Green_NITRR">
                   <i class="fa fa-twitter"></i>
                 </a>
               </li>
-              <li class="list-inline-item">
-                <a href="#">
+              <li class="list-inline-item" data-aos="zoom-in"  data-aos-duration="1000">
+                <a href="https://www.facebook.com/PukaarNITRaipur/">
                   <i class="fa fa-facebook"></i>
                 </a>
               </li>
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="fa fa-linkedin"></i>
+              <li class="list-inline-item" data-aos="zoom-in"  data-aos-duration="1000">
+                <a href="https://www.instagram.com/go_green_nitrr/">
+                  <i class="fa fa-instagram"></i>
                 </a>
               </li>
             </ul>
           </div>
-          <div class="col-md-4">
-            <ul class="list-inline quicklinks">
-              <li class="list-inline-item">
-                <a href="#">Privacy Policy</a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">Terms of Use</a>
-              </li>
-            </ul>
+          <div class="col-md-4"  data-aos="zoom-in"  data-aos-duration="1000">
+              <br>
+            <div class="row" >
+                <div class="col-md-12" style="  background-color:rgb(240, 71, 65);height:40px; " >
+                  <p  style=""><strong>with love :</strong></p>
+                </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12" style="background:rgb(248, 247, 246);color:rgb(66, 66, 100); border-radius:3%;" >
+                        <a href="https://github.com/vinaykornapalli"> <img src="img/team/vinay.jpg" alt="" class="img-responsive rounded-circle" style="width:30px;height:30px;"> </a>
+                        <span>vinay kornapalli :)</span>
+                    </div>
+
+                </div>
+              
+    
+               <div class="row" >
+                  <div  class="col-md-12" style="  background:rgb(59, 192, 59);  border-radius:2%;">
+                      <a href="https://github.com/kSUkey"><img src="img/team/kshtig.jpg" alt="" class="img-responsive rounded-circle" style="width:30px;height:30px;"></a>
+                      <span>Kshitij S. Ukey</span>
+                  </div>
+                </div>
+    
+            </div>
           </div>
         </div>
       </div>
     </footer>
 
-    <!-- Portfolio Modals -->
+     <!-- Portfolio Modals -->
 
     <!-- Modal 1 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true" style="color:black;">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+              <div class="lr">
+                <div class="rl"></div>
+              </div>
+            </div>
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-8 mx-auto">
+                  <div class="modal-body">
+                    <!-- Project Details Go Here -->
+                    <h2 class="text-uppercase">DOODLE SHOW</h2>
+                    <p class="item-intro text-muted"></p>
+                    <img class="img-fluid d-block mx-auto" src="img/events/doodleshow.jpg" alt="">
+                    <p>It's time to dust out your paint brushes, canvas and get ready to create your own Doodles. Pukaar gives an opportunity to bring out the artist with creativity in you and share your ideas towards nature by painting it your way. All the required materials like sketch pens, pencils, water colors will be provided at the spot. So come at your pace. Draw your ideas and the most creative doodles will be awarded with exciting prizes.</p>
+                    <ul class="list-inline">
+                      <li>Team size : Individual</li>
+                    </ul>
+                    <button class="btn btn-primary" data-dismiss="modal" type="button">
+                      <i class="fa fa-times"></i>
+                      Close</button>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
-                  <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Project Name</h2>
-                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                  <img class="img-fluid d-block mx-auto" src="img/portfolio/01-full.jpg" alt="">
-                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                  <ul class="list-inline">
-                    <li>Date: January 2017</li>
-                    <li>Client: Threads</li>
-                    <li>Category: Illustration</li>
-                  </ul>
-                  <button class="btn btn-primary" data-dismiss="modal" type="button">
-                    <i class="fa fa-times"></i>
-                    Close Project</button>
+        </div>
+      </div>
+  
+      <!-- Modal 2 -->
+      <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true" style="color:black;">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+              <div class="lr">
+                <div class="rl"></div>
+              </div>
+            </div>
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-8 mx-auto">
+                  <div class="modal-body">
+                    <!-- Project Details Go Here -->
+                    <h2 class="text-uppercase">GREPLANNER</h2>
+                    <p class="item-intro text-muted"></p>
+                    <img class="img-fluid d-block mx-auto" src="img/events/greplanner.jpg" alt="">
+                    <p>Everyone dreams of a luxury home with amazing facilities. But how about having a whole city and what about designing them. Pukaar here brings you such an exciting opportunity where you can design our own city of dreams.</p>
+                    <ul class="list-inline">
+                      <li>Team size : Maximum of 2 members</li>
+                    </ul>
+                    <button class="btn btn-primary" data-dismiss="modal" type="button">
+                      <i class="fa fa-times"></i>
+                      Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Modal 3 -->
+      <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true" style="color:black;">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+              <div class="lr">
+                <div class="rl"></div>
+              </div>
+            </div>
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-8 mx-auto">
+                  <div class="modal-body">
+                    <!-- Project Details Go Here -->
+                    <h2 class="text-uppercase">SLOW CYCLE RACE</h2>
+                    <p class="item-intro text-muted"></p>
+                    <img class="img-fluid d-block mx-auto" src="img/events/slowcycle.jpg" alt="">
+                    <p>Life is a maze, don't just gaze. Change your pace, to win the race. What's more difficult then balancing a relationship? Well, balancing a slowly running cycle! Pukaar gives you an opportunity to show your cycling and balancing skills. Participants have to ride their cycle, balancing it in such a way that the last one remaining will be the winner. Join the race to maintain your pace.</p>
+                    <ul class="list-inline">
+                      <li>Team size : Individual</li>
+                    </ul>
+                    <button class="btn btn-primary" data-dismiss="modal" type="button">
+                      <i class="fa fa-times"></i>
+                      Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Modal 4 -->
+      <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true" style="color:black;">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+              <div class="lr">
+                <div class="rl"></div>
+              </div>
+            </div>
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-8 mx-auto">
+                  <div class="modal-body">
+                    <!-- Project Details Go Here -->
+                    <h2 class="text-uppercase">Signature For Nature</h2>
+                    <p class="item-intro text-muted"></p>
+                    <img class="img-fluid d-block mx-auto" src="img/events/signaturefornature.jpg" alt="">
+                    <p>Never had a chance to express your care for nature? Being a participant of Pukaar, you are given a great chance to do so. Paired with a nurturing line, showcase your love for environment at the event “Signature for Nature”. Depict your feelings and support to We Care-The Green Movement, NITRR with a sweet signature.</p>
+                    <ul class="list-inline">
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                    </ul>
+                    <button class="btn btn-primary" data-dismiss="modal" type="button">
+                      <i class="fa fa-times"></i>
+                      Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Modal 5 -->
+      <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true" style="color:black;">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+              <div class="lr">
+                <div class="rl"></div>
+              </div>
+            </div>
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-8 mx-auto">
+                  <div class="modal-body">
+                    <!-- Project Details Go Here -->
+                    <h2 class="text-uppercase">KAVYAANJALI</h2>
+                    <p class="item-intro text-muted"></p>
+                    <img class="img-fluid d-block mx-auto" src="img/events/kavyaanjali.jpg" alt="">
+                    <p>"Calm is all nature as a resting wheel. The kine are couched upon the dewy grass; The horse alone, seen dimly as I pass, Is cropping audibly his later meal:..." Every line says an emotion. Every word flows out of your heart. With the magic of words and a bit of eloquence, it's your turn to transform your nature love to a beautiful poetry. Be a part of "POETRY" event at Pukaar!</p>
+                    <ul class="list-inline">
+                      <li>Team size : Individual</li>
+                      <li>Venue : Amul Parlor</li>
+                      <li>Theme : Prakriti ki Pukaar</li>
+                    </ul>
+                    <button class="btn btn-primary" data-dismiss="modal" type="button">
+                      <i class="fa fa-times"></i>
+                      Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Modal 6 -->
+      <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true" style="color:black;">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+              <div class="lr">
+                <div class="rl"></div>
+              </div>
+            </div>
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-8 mx-auto">
+                  <div class="modal-body">
+                    <!-- Project Details Go Here -->
+                    <h2 class="text-uppercase">N - VISAGE</h2>
+                    <p class="item-intro text-muted"></p>
+                    <img class="img-fluid d-block mx-auto" src="img/events/n visage.jpg" alt="">
+                    <p>Considering the current state of mess that surrounds our ecology and environment, experts have proposed quick implementation of eco-friendly steps across all dimensions of human work to prevent our planet from the ecological and environmental collapse. Drawing a form to this inspiration taken, Pukaar comes up with N-Visage, the core event of We Care-The Green Movement. It is a case study event that aims to study and review different environmental related problems of Raipur and gather fresh ideas that can be suitably adapted to ameliorate the ailing environment and bring everything under label green.</p>
+                    <ul class="list-inline">
+                      <li>Team size : Maximum of 3 members </li>
+                    </ul>
+                    <button class="btn btn-primary" data-dismiss="modal" type="button">
+                      <i class="fa fa-times"></i>
+                      Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Modal 7 -->
+      <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true" style="color:black;">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+              <div class="lr">
+                <div class="rl"></div>
+              </div>
+            </div>
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-8 mx-auto">
+                  <div class="modal-body">
+                    <!-- Project Details Go Here -->
+                    <h2 class="text-uppercase">EBULLIENCE</h2>
+                    <p class="item-intro text-muted"></p>
+                    <img class="img-fluid d-block mx-auto" src="img/events/ebullience.jpg" alt="">
+                    <p>"Someone's sitting under shade, coz someone has planted a tree long time ago...." Wait, which tree, what is it's color, how are its leaves,..??!! Hold on! Trees are most pacifying things in nature. Every tree is unique, based on its color, appearance, leave structure, utility, etc. Every tree has its beauty within itself. Now turn your minds sharp to predict the tree based on few defining, yet appealing parameters. Be a part of the event "Tree Hunt" at Pukaar!</p>
+                    <ul class="list-inline">
+                      <li>Team size : 3 Members</li>
+                      <li>Venue : College Campus</li>
+                    </ul>
+                    <button class="btn btn-primary" data-dismiss="modal" type="button">
+                      <i class="fa fa-times"></i>
+                      Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Modal 8 -->
+      <div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" role="dialog" aria-hidden="true" style="color:black;">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+              <div class="lr">
+                <div class="rl"></div>
+              </div>
+            </div>
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-8 mx-auto">
+                  <div class="modal-body">
+                    <!-- Project Details Go Here -->
+                    <h2 class="text-uppercase">CAPTURE THE MOMENT</h2>
+                    <p class="item-intro text-muted"></p>
+                    <img class="img-fluid d-block mx-auto" src="img/events/capture the moment.jpg" alt="">
+                    <p>As it is said that you don’t need to have an expensive gadget to capture the beauty of any event, it’s your perspective only.
+                      All the photography lovers! Pukkkar hereby presents you a chance to show your photography skills & capture the most memorable & stunning moments & we will show your picture in our official page, website and app. If you are having the perspective then you need to be ready for our ‘Capture The Moment’ event. 
+                        Only thing that you need to have to take part in this event is a camera, which can be a DSLR, Point and Shoot, Phone Camera or any other type of camera that you know.
+                      </p>
+                    <ul class="list-inline">
+                      <li>Team size : Individual</li>
+                      <li>Venue : Stall</li>
+                    </ul>
+                    <button class="btn btn-primary" data-dismiss="modal" type="button">
+                      <i class="fa fa-times"></i>
+                      Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Modal 9 -->
+      <div class="portfolio-modal modal fade" id="portfolioModal9" tabindex="-1" role="dialog" aria-hidden="true" style="color:black;">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+              <div class="lr">
+                <div class="rl"></div>
+              </div>
+            </div>
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-8 mx-auto">
+                  <div class="modal-body">
+                    <!-- Project Details Go Here -->
+                    <h2 class="text-uppercase">SELFIE WITH NATURE</h2>
+                    <p class="item-intro text-muted"></p>
+                    <img class="img-fluid d-block mx-auto" src="img/events/selfie with nature.jpg" alt="">
+                    <p>Going trendy! Snap snap!! 
+                      Wherever you go, whatever you eat, whatever you do, click and upload. For selfie addicts, nature, flowers and trees are nothing less than divine. And what if this addiction is given a chance to prove it's degree?!! Pukaar, NIT Raipur is here with the event "Selfie With Nature". With a spectacular theme of any environmental element, add beauty to your selfie.
+                      Send us your entries and get a chance to win amazing prizes worth Rs. 2000!</p>
+                    <ul class="list-inline">
+                      <li></li>
+                    </ul>
+                    <button class="btn btn-primary" data-dismiss="modal" type="button">
+                      <i class="fa fa-times"></i>
+                      Close</button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -524,194 +904,20 @@
         </div>
       </div>
     </div>
-
-    <!-- Modal 2 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
-                  <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Project Name</h2>
-                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                  <img class="img-fluid d-block mx-auto" src="img/portfolio/02-full.jpg" alt="">
-                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                  <ul class="list-inline">
-                    <li>Date: January 2017</li>
-                    <li>Client: Explore</li>
-                    <li>Category: Graphic Design</li>
-                  </ul>
-                  <button class="btn btn-primary" data-dismiss="modal" type="button">
-                    <i class="fa fa-times"></i>
-                    Close Project</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Modal 3 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
-                  <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Project Name</h2>
-                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                  <img class="img-fluid d-block mx-auto" src="img/portfolio/03-full.jpg" alt="">
-                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                  <ul class="list-inline">
-                    <li>Date: January 2017</li>
-                    <li>Client: Finish</li>
-                    <li>Category: Identity</li>
-                  </ul>
-                  <button class="btn btn-primary" data-dismiss="modal" type="button">
-                    <i class="fa fa-times"></i>
-                    Close Project</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Modal 4 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
-                  <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Project Name</h2>
-                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                  <img class="img-fluid d-block mx-auto" src="img/portfolio/04-full.jpg" alt="">
-                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                  <ul class="list-inline">
-                    <li>Date: January 2017</li>
-                    <li>Client: Lines</li>
-                    <li>Category: Branding</li>
-                  </ul>
-                  <button class="btn btn-primary" data-dismiss="modal" type="button">
-                    <i class="fa fa-times"></i>
-                    Close Project</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Modal 5 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
-                  <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Project Name</h2>
-                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                  <img class="img-fluid d-block mx-auto" src="img/portfolio/05-full.jpg" alt="">
-                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                  <ul class="list-inline">
-                    <li>Date: January 2017</li>
-                    <li>Client: Southwest</li>
-                    <li>Category: Website Design</li>
-                  </ul>
-                  <button class="btn btn-primary" data-dismiss="modal" type="button">
-                    <i class="fa fa-times"></i>
-                    Close Project</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Modal 6 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
-                  <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Project Name</h2>
-                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                  <img class="img-fluid d-block mx-auto" src="img/portfolio/06-full.jpg" alt="">
-                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                  <ul class="list-inline">
-                    <li>Date: January 2017</li>
-                    <li>Client: Window</li>
-                    <li>Category: Photography</li>
-                  </ul>
-                  <button class="btn btn-primary" data-dismiss="modal" type="button">
-                    <i class="fa fa-times"></i>
-                    Close Project</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <!-- Bootstrap core JavaScript -->
-    
+    <script src="js/jquery.min.js"></script>
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="js/preloader.js"></script>
 
     <!-- Plugin JavaScript -->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-    <!-- Contact form JavaScript -->
     <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
-
-    <!-- Custom scripts for this template -->
+    <script src="js/aos.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.scrollTo.js"></script>
     <script src="js/agency.min.js"></script>
-  
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
     
     <script src="js/app.js"></script>
    

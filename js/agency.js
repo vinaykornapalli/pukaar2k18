@@ -1,7 +1,15 @@
-(function($) {
+(
+function($) {
   "use strict"; // Start of use strict
 
   // Smooth scrolling using jQuery easing
+
+  new WOW().init();
+  jQuery(window).load(function() {
+    jQuery("#preloader").delay(100).fadeOut("slow");
+    jQuery("#load").delay(100).fadeOut("slow");
+  });
+
   $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
       var target = $(this.hash);
@@ -48,3 +56,5 @@
   })
 
 })(jQuery); // End of use strict
+
+

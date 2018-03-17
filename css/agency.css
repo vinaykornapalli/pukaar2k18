@@ -1,6 +1,7 @@
 body {
   overflow-x: hidden;
   font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  max-width:100%;
 }
 
 p {
@@ -166,7 +167,7 @@ img::-moz-selection {
 
 header.masthead {
   text-align: center;
-  color: #35882e;
+  color: #2d6d5a;
   background-image: url("../img/home.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -221,6 +222,39 @@ header.masthead .intro-text .intro-heading {
     font-family: 'Bowlby One SC', cursive;
     text-shadow: -1px 0 1px #000;
   }
+}
+
+
+#services
+{
+  background: white;
+  color: black;
+}
+
+#portfolio
+{
+  color:black;
+}
+#about
+{
+  background: white;
+  color: black;
+}
+
+#team
+{
+  color: black;
+}
+
+#spons
+{
+  color:black;
+  background: white;
+}
+
+#foot
+{
+  color: white;
 }
 
 .service-heading {
@@ -657,6 +691,7 @@ section#contact :-ms-input-placeholder {
 footer {
   padding: 25px 0;
   text-align: center;
+
 }
 
 footer span.copyright {
@@ -672,8 +707,18 @@ footer ul.quicklinks {
   margin-bottom: 0;
   text-transform: none;
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: white !important;
 }
+.hide
+{
+  display: none;
+}
+.more
+{
+  margin-left: auto;
+  margin-right: auto;
 
+}
 ul.social-buttons {
   margin-bottom: 0;
 }
